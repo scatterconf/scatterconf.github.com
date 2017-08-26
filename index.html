@@ -21,19 +21,34 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Local styles -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
   </head>
   <body>
-    <div class="wrapper">
-      <img src="images/logo_orange.svg">
-      <header>
-      </header>
-      <section>
-      </section>
-      <footer>
-      </footer>
+    <div class="container-fluid splash">
+      <div class="row">
+        <div class="container">
+          <img src="images/logo_orange.svg" class="img-fluid" alt="Scatter logomark">
+        </div>
+      </div>
     </div>
+    <div class="container-fluid intro">
+      <div class="row">
+        <div class="container">
+        </div>
+      </div>
+    </div>
+
+    <!-- Randomize splash backgrounds -->
+    <script type="text/javascript">
+      var num = Math.floor(Math.random() * 4) + 1;
+      $('div.splash').css('background-image', 'url(images/photos/workspace' + num + '.jpg)');
+    </script>
+
+    <!-- Google Analytics -->
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
