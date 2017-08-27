@@ -1,16 +1,18 @@
 
 body {
-  font-family: "Noto Sans";
-  color: #ffffff;
+  font-family: 'Raleway';
+  color: #646a6f;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Petit Formal Script', cursive;
+  margin-bottom: 1em;
 }
 
 div.banner {
   background: url('../images/photos/workspace1.jpg') center center no-repeat;
   background-size: cover;
+  color: #ffffff;
 }
 
 .banner div.row {
@@ -45,4 +47,28 @@ div.banner {
   div.banner { background-image: url('../images/photos/workspace2.jpg'); }
   .banner img { min-height: 30em; }
   .banner div.row.tagline { min-height: 15em; }
+}
+
+.about div.row {
+  background-color: #ffffff;
+}
+
+.agenda div.row {
+  background-color: #dedede;
+}
+
+.location div.row {
+  background-color: #ffffff;
+}
+
+.tickets div.row {
+  background-color: #dedede;
+}
+
+.sponsors div.row {
+  background-color: #ffffff;
+}
+
+.conduct div.row {
+  background-color: #dedede;
 }
