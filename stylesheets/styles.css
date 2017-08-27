@@ -1,4 +1,13 @@
 
+body {
+  font-family: "Noto Sans";
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Petit Formal Script', cursive;
+}
+
 div.splash {
   background: rgb(255, 255, 255) url('../images/photos/workspace1.jpg') center center no-repeat;
   background-size: cover;
@@ -6,4 +15,32 @@ div.splash {
 
 .splash div.row {
   background-color: rgba(154, 126, 126, 0.7);
+}
+
+.splash img {
+  min-height: 15em;
+}
+
+.splash div.row.welcome {
+  min-height: 15em;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .splash img { min-height: 20em; }
+  .splash div.row.welcome { min-height: 15em; }
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 991px) {
+  .splash img { min-height: 20em; }
+  .splash div.row.welcome { min-height: 15em; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .splash img { min-height: 25em; }
+  .splash div.row.welcome { min-height: 15em; }
+}
+
+@media only screen and (min-width: 1200px) {
+  .splash img { min-height: 30em; }
+  .splash div.row.welcome { min-height: 15em; }
 }
