@@ -36,11 +36,13 @@ div.splash {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  div.splash { background-image: url('../images/photos/workspace2.jpg'); }
   .splash img { min-height: 25em; }
   .splash div.row.welcome { min-height: 15em; }
 }
 
 @media only screen and (min-width: 1200px) {
+  div.splash { background-image: url('../images/photos/workspace2.jpg'); }
   .splash img { min-height: 30em; }
   .splash div.row.welcome { min-height: 15em; }
 }
