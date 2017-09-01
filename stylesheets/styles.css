@@ -4,10 +4,16 @@ body {
   color: #646a6f;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Petit Formal Script', cursive;
+h1, h2, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 1em;
 }
+
+a {
+  color: #418cdc;
+}
+
+/* Banner */
 
 div.banner {
   background: url('../images/photos/workspace1.jpg') center center no-repeat;
@@ -19,56 +25,108 @@ div.banner {
   background-color: rgba(154, 126, 126, 0.7);
 }
 
-.banner img {
-  min-height: 15em;
-}
-
-.banner div.row.tagline {
-  min-height: 15em;
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .banner img { min-height: 20em; }
-  .banner div.row.tagline { min-height: 15em; }
-}
-
-@media only screen and (min-width: 768px)  and (max-width: 991px) {
-  .banner img { min-height: 20em; }
-  .banner div.row.tagline { min-height: 15em; }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 572px) {
   div.banner { background-image: url('../images/photos/workspace2.jpg'); }
-  .banner img { min-height: 25em; }
-  .banner div.row.tagline { min-height: 15em; }
 }
 
-@media only screen and (min-width: 1200px) {
-  div.banner { background-image: url('../images/photos/workspace2.jpg'); }
-  .banner img { min-height: 30em; }
-  .banner div.row.tagline { min-height: 15em; }
-}
+/* About */
 
 .about div.row {
   background-color: #ffffff;
 }
 
-.agenda div.row {
-  background-color: #dedede;
+.about img#heart {
+  max-width: 1.5em;
+}
+
+/* Agenda */
+
+/* Background vector created by Freepik - Freepik.com */
+/* http://www.freepik.com/free-vector/polygonal-abstract-background-design_719712.htm */
+
+div.agenda {
+  background: url('../images/patterns/719712.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* Location */
+
+div.location {
+  background: url('../images/photos/location.jpg') center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
 }
 
 .location div.row {
-  background-color: #ffffff;
+  background-color: rgba(99, 134, 171, 0.7);
 }
 
+.location .btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.location .btn:hover {
+  background-color: #ffffff;
+  color: rgba(31, 82, 197, 0.7);
+}
+
+/* Tickets */
+
 .tickets div.row {
-  background-color: #dedede;
+  background-color: #fe8c2e;
+  color: #ffffff;
+}
+
+.tickets .btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tickets .btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Sponsors */
+
+/* Polygonal pattern created by Pinnacleanimates - Freepik.com */
+/* http://www.freepik.com/free-vector/abstract-polygonal-background_1245739.htm */
+
+div.sponsors {
+  background: url('../images/patterns/1245739.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 .sponsors div.row {
-  background-color: #ffffff;
+  background-color: rgba(0,0,0,0.5);
+  color: #dedede;
 }
 
+.sponsors img {
+  max-width: 50%;
+  border: 1px solid #828282;
+}
+
+.sponsors a#contact {
+  color: #e2c917;
+}
+
+/* Code of Conduct */
+
 .conduct div.row {
-  background-color: #dedede;
+  background-color: #efeeee;
+}
+
+.conduct h3 {
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  margin-top: 1.25em;
+}
+
+/* Footer */
+
+div.footer {
+  background-color: #343a40;
+  color: #dedede;
 }

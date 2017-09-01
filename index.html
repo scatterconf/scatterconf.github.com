@@ -12,8 +12,17 @@
     <title>Scatter Conference</title>
 
     <!-- CDN fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <!-- currently unused fonts -->
+    <!--link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet"-->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -30,11 +39,44 @@
   </head>
   <body>
 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Scatter <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agenda">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tickets">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conduct">Conduct</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- banner -->
     <div class="container-fluid banner">
 
       <!-- banner image -->
-      <div class="row">
+      <div class="row py-5">
         <div class="col"></div>
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
           <img src="images/logo_orange.svg" class="img-fluid" alt="Scatter logomark">
@@ -43,86 +85,149 @@
       </div>
 
       <!-- banner tagline -->
-      <div class="row tagline">
+      <div class="row tagline py-5">
         <div class="col"></div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10">
-          <h2 class="text-center">A Conference for Distributed Teams and Remote Workers</h2>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 text-center">
+          <h2>A Conference for Distributed Teams and Remote Workers</h2>
+          <h4>Austin, TX - March 2018</h4>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- about -->
-    <div class="container-fluid about">
+    <div class="container-fluid about" id="about">
       <div class="row align-items-center py-5">
         <div class="col"></div>
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
-          <h2 class="text-center">About Scatter</h2>
+          <h2 class="text-center">United by Purpose</h2>
           <p class="text-justify">Businesses and employees have come to realize the benefits of distributed teams and remote working. Scatter brings together diverse people from across the world to tell our stories, share experiences, learn new habits, meet other remote-friendly companies, and discover the gear that helps us make the most of our unique workflows.</p>
+          <p class="text-center mt-4">
+            <a href="https://monitorama.com/" target="_blank">
+              <img src="images/monitorama-love.png" class="img-fluid" id="heart" title="Brought to you with love by the folks behind Monitorama" alt="Brought to you with love by the folks behind Monitorama">
+            </a>
+          </p>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- agenda -->
-    <div class="container-fluid agenda">
+    <div class="container-fluid agenda" id="agenda">
       <div class="row align-items-center py-5">
         <div class="col"></div>
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
           <h2 class="text-center">Agenda &amp; Speakers</h2>
-          <p class="text-justify"></p>
+          <p class="text-center">Coming Soon!</p>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- location -->
-    <div class="container-fluid location">
-      <div class="row align-items-center py-5">
+    <div class="container-fluid location" id="location">
+      <div class="row align-items-center pt-5">
         <div class="col"></div>
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
-          <h2 class="text-center">Location</h2>
-          <p class="text-justify"></p>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 text-center">
+          <h2>Location</h2>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row align-items-top pb-5">
+        <div class="col"></div>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 text-right">
+          <a href="https://goo.gl/maps/Fa8wCyvrmiw" target="_blank">
+            <img src="images/map.png" class="img-fluid img-thumbnail" alt="ZACH Theatre location">
+          </a>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 text-left">
+          <h5>ZACH Topfer Theatre</h5>
+          <p>202 S Lamar Blvd<br/>Austin, TX 78704</p>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 text-left">
+          <a href="http://zachtheatre.org/visit/parking/" target="_blank" class="btn navbar-right hidden-xs">Parking</a>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- tickets -->
-    <div class="container-fluid tickets">
+    <div class="container-fluid tickets" id="tickets">
       <div class="row align-items-center py-5">
         <div class="col"></div>
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
-          <h2 class="text-center">Tickets</h2>
-          <p class="text-justify"></p>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 text-right">
+          <!-- Early Bird tickets are still available! -->
+          Registration coming soon!
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5">
+          <!--a href="https://ti.to/scatter/austin2018" target="_blank" class="btn navbar-right hidden-xs">Register Now</a-->
+          <a href="https://ti.to/scatter/austin2018" target="_blank" class="btn navbar-right hidden-xs">Get Updates</a>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- sponsors -->
-    <div class="container-fluid sponsors">
+    <div class="container-fluid sponsors" id="sponsors">
       <div class="row align-items-center py-5">
         <div class="col"></div>
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
           <h2 class="text-center">Sponsors</h2>
-          <p class="text-justify"></p>
+          <p class="text-justify">Scatter offers a unique experience for both sponsors and attendees alike. We provide a low-pressure environment for networking with the audience, delivering your product messaging, and increasing the visibility of your brand. Sponsoring a Scatter event is an effective way for businesses to connect with motivated customers looking for creative solutions.</p>
+          <!--p class="text-justify">Download our Prospectus to learn more about our sponsorship offerings.</p-->
+          <p class="text-justify">For sponsorship opportunities, or to inquire about custom packages, please <a href="mailto:info@monitorama.com" id="contact">email us</a> and we'll be happy to assist you.</p>
         </div>
         <div class="col"></div>
       </div>
     </div>
 
     <!-- code of conduct -->
-    <div class="container-fluid conduct">
+    <div class="container-fluid conduct" id="conduct">
       <div class="row align-items-center py-5">
         <div class="col"></div>
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
           <h2 class="text-center">Code of Conduct</h2>
           <p class="text-justify"></p>
+
+          <p class="text-justify">All delegates, speakers, sponsors and volunteers at any Scatter event are required to agree with the following code of conduct. Organizers will enforce this code throughout the event.</p>
+
+          <h3 class="text-center">The Quick Version</h3>
+
+          <p class="text-justify">Scatter is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.</p>
+
+          <h3 class="text-center">The Less Quick Version</h3>
+
+          <p>Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+
+          <p class="text-justify">Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+
+          <p class="text-justify">Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material.</p>
+
+          <p class="text-justify">Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for Scatter.</p>
+
+          <p class="text-justify">If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.</p>
+
+          <p class="text-justify">If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff will be visible by their special badges and clothing.</p>
+
+          <p class="text-justify">Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
+
+          <p class="text-justify">We expect participants to follow these rules at all conference venues and conference-related social events.</p>
         </div>
         <div class="col"></div>
       </div>
     </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+      <div class="row align-items-center py-5">
+        <div class="col"></div>
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-10">
+          <p class="text-center">&copy; Scatter Conference 2017-2018</p>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
 
     <!-- Google Analytics -->
     <script src="javascripts/scale.fix.js"></script>
