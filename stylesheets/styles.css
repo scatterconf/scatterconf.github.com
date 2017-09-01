@@ -5,7 +5,6 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 1em;
 }
 
@@ -16,17 +15,25 @@ a {
 /* Banner */
 
 div.banner {
-  background: url('../images/photos/workspace1.jpg') center center no-repeat;
+  background: url('../images/photos/workspace2.jpg') center center no-repeat;
   background-size: cover;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 572px) {
+  div.banner { background-image: url('../images/photos/workspace2.jpg'); }
 }
 
 .banner div.row {
   background-color: rgba(154, 126, 126, 0.7);
 }
 
-@media only screen and (min-width: 572px) {
-  div.banner { background-image: url('../images/photos/workspace2.jpg'); }
+.banner img {
+  max-height: 10em;
+}
+
+.banner .tagline h2 {
+  font-weight: 200;
 }
 
 /* About */
