@@ -130,3 +130,7 @@ div.footer {
   background-color: #343a40;
   color: #dedede;
 }
+
+.footer img {
+  max-height: 1.5em;
+}
