@@ -52,8 +52,11 @@ div.banner {
 /* http://www.freepik.com/free-vector/polygonal-abstract-background-design_719712.htm */
 
 div.agenda {
-  background: url('../images/patterns/719712.jpg') no-repeat;
-  background-size: cover;
+  background-color: #f3f3f3;
+}
+
+.agenda p#form-success {
+  display: none;
 }
 
 /* Location */
