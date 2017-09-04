@@ -46,6 +46,19 @@ div.banner {
   max-width: 1.5em;
 }
 
+/* Gallery */
+
+div.gallery {
+  background: url('../images/photos/workspace6.jpg') center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.gallery div.row {
+  background-color: rgba(177, 137, 104, 0.3);
+  min-height: 30em;
+}
+
 /* Agenda */
 
 /* Background vector created by Freepik - Freepik.com */
