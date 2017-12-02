@@ -25,9 +25,6 @@ var formHandler = function (url) {
   }
 }
 
-// submit CFP form
-$('.agenda .signup form').on('click', 'a', formHandler('https://judy-scatter-2018.herokuapp.com/abstracts/new'));
-
 // function to sort speakers by surname
 function compare(a,b) {
   nameA = a.name.split(' ')
