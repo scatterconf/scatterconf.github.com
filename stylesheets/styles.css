@@ -59,6 +59,42 @@ div.gallery {
   min-height: 30em;
 }
 
+/* New Agenda */
+
+.new-agenda div.card.blue {
+  //background-color: blue;
+}
+
+.new-agenda div.card.orange {
+  background-color: orange;
+}
+
+.new-agenda div.card.yellow {
+  background-color: yellow;
+}
+
+.new-agenda div.card.green {
+  background-color: green;
+}
+
+.new-agenda .card-body h5 {
+  visibility: hidden;
+  color: #ffffff;
+}
+
+.new-agenda div.card-body {
+  background-blend-mode: normal;
+}
+
+.new-agenda div.card-body:hover {
+  background-blend-mode: luminosity;
+}
+
+.new-agenda div.card-body:hover h5 {
+  visibility: visible;
+  filter: opacity(100%);
+}
+
 /* Agenda */
 
 /* Background vector created by Freepik - Freepik.com */
