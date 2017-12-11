@@ -84,10 +84,12 @@ div.gallery {
 
 .new-agenda div.card-body {
   background-blend-mode: normal;
+  background-color: #fe8c2e !important;
 }
 
 .new-agenda div.card-body:hover {
   background-blend-mode: luminosity;
+  cursor:pointer;
 }
 
 .new-agenda div.card-body:hover h5 {
