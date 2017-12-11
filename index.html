@@ -124,20 +124,20 @@
       <div class="row justify-content-center align-items-center">
         <div class="card-group">
           <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0" data-toggle="modal">
+            <div class="card rounded-0 border-0" data-toggle="modal" data-id="matt">
               <div class="card-body" style="background-image: url(images/photos/speakers/matt_mullenweg.jpg); background-size: cover; height: 10rem;">
                 <h5 class="card-text">Matt Mullenweg</h5>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0">
+            <div class="card rounded-0 border-0" data-toggle="modal" data-id="jill">
               <div class="card-body" style="background-image: url(images/photos/speakers/jill_jubinski.jpg); background-size:cover; height: 10rem;">
                 <h5 class="card-text">Jill Jubinski</h5>
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
+          <div class="col-lg-2 col-md-3 col-sm-12 px-0" data-id="dizzy">
             <div class="card rounded-0 border-0">
               <div class="card-body" style="background-image: url(images/photos/speakers/dave_smith.jpg); background-size:cover; height: 10rem;">
                 <h5 class="card-text">Dizzy Smith</h5>
@@ -328,6 +328,23 @@
           </a>
         </div>
         <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- speaker modal -->
+    <div class="modal fade speaker-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
 

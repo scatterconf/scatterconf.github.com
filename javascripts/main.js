@@ -24,3 +24,32 @@ var formHandler = function (url) {
     return false;
   }
 }
+
+// Dynamic content for modals
+var SPEAKERS = {
+  'matt': {
+    name: 'Matt Mullenweg',
+    bio: 'Lorem ipsum'
+  },
+
+  'jill': {
+    name: 'Jill Jubinski',
+    bio: 'Lorem ipsum also'
+  }
+};
+
+$('.card').on('click', function (e) {
+  e.preventDefault();
+  var $el = $(e.currentTarget);
+  var id = $el.data('id');
+  if (id) {
+    var speaker = SPEAKERS[id] || {};
+    var modal = $('.speaker-modal').modal();
+
+    // Set the title of the modal to the speaker name
+    $('.speaker-modal .modal-title').text(speaker.name);
+
+    // Set the modal body to the speaker bio
+    $('.speaker-modal .modal-body p').text(speaker.bio);
+  }
+});
