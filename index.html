@@ -22,6 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 
     <!-- Local styles -->
     <link rel="stylesheet" href="stylesheets/styles.css?v=7">
@@ -118,57 +119,27 @@
       </div>
     </div>
 
-    <!-- new agenda -->
-    <div class="container new-agenda pt-5 pb-5" id="new-agenda">
-      <!-- row #1 -->
+    <!-- speakers -->
+    <div class="container new-agenda pt-5 pb-5">
       <div class="row justify-content-center align-items-center">
-        <div class="card-group">
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0" data-toggle="modal" data-id="matt">
-              <div class="card-body" style="background-image: url(images/photos/speakers/matt_mullenweg.jpg); background-size: cover; height: 10rem;">
-                <h5 class="card-text">Matt Mullenweg</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0" data-toggle="modal" data-id="jill">
-              <div class="card-body" style="background-image: url(images/photos/speakers/jill_jubinski.jpg); background-size:cover; height: 10rem;">
-                <h5 class="card-text">Jill Jubinski</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0" data-id="dizzy">
-            <div class="card rounded-0 border-0">
-              <div class="card-body" style="background-image: url(images/photos/speakers/dave_smith.jpg); background-size:cover; height: 10rem;">
-                <h5 class="card-text">Dizzy Smith</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0">
-              <div class="card-body" style="background-image: url(images/photos/speakers/cate_huston.jpg); background-size:cover; height: 10rem;">
-                <h5 class="card-text">Cate Huston</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0">
-              <div class="card-body" style="background-image: url(images/photos/speakers/dave_smith.jpg); background-size:cover; height: 10rem;">
-                <h5 class="card-text">John Doe</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-            <div class="card rounded-0 border-0">
-              <div class="card-body" style="background-image: url(images/photos/speakers/dave_smith.jpg); background-size:cover; height: 10rem;">
-                <h5 class="card-text">John Doe</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Add speaker here... -->
+        <div class="card-group" id="speakers">
+          <!-- template rendered here -->
         </div>
       </div>
     </div>
+
+    <!-- speaker mustache template -->
+    <script id="speaker" type="x-tmpl-mustache">
+      {{#speakers}}
+      <div class="col-lg-3 col-md-3 col-sm-12 px-0">
+        <div class="card rounded-0 border-0" data-toggle="modal" data-id={{id}}>
+          <div class="card-body" style="background-image: url({{photo}}); background-size:cover; height: 10rem; background-color: {{color}} !important;">
+            <h5 class="card-text">{{name}}</h5>
+          </div>
+        </div>
+      </div>
+      {{/speakers}}
+    </script>
 
     <!-- agenda -->
     <div class="container-fluid agenda" id="agenda">

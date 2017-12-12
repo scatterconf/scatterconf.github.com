@@ -25,25 +25,21 @@ var formHandler = function (url) {
   }
 }
 
-// Dynamic content for modals
-var SPEAKERS = {
-  'matt': {
-    name: 'Matt Mullenweg',
-    bio: 'Lorem ipsum'
-  },
+// Cards 
+var speakerTemplate = $("#speaker").html();
+Mustache.parse(speakerTemplate);
+var rendered = Mustache.render(speakerTemplate, SPEAKERS);
+$("#speakers").html(rendered);
 
-  'jill': {
-    name: 'Jill Jubinski',
-    bio: 'Lorem ipsum also'
-  }
-};
-
+// Modal
 $('.card').on('click', function (e) {
   e.preventDefault();
   var $el = $(e.currentTarget);
   var id = $el.data('id');
   if (id) {
-    var speaker = SPEAKERS[id] || {};
+    var speaker = SPEAKERS['speakers'].find(function (s) {
+      return s.id == id;
+    }) || {};
     var modal = $('.speaker-modal').modal();
 
     // Set the title of the modal to the speaker name
