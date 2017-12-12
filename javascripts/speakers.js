@@ -40,6 +40,32 @@ var SPEAKERS = {
       color: '#ffc107'
     },
     {
+      id: 'jill',
+      name: 'Jill Jubinski',
+      twitter: '',
+      bio: 'Lorem ipsum',
+      photo: 'images/photos/speakers/jill_jubinski.jpg',
+      title: '',
+      abstract: '',
+      video: '',
+      slides: '',
+      schedule: '',
+      color: 'red'
+    },
+    {
+      id: 'jill',
+      name: 'Jill Jubinski',
+      twitter: '',
+      bio: 'Lorem ipsum',
+      photo: 'images/photos/speakers/jill_jubinski.jpg',
+      title: '',
+      abstract: '',
+      video: '',
+      slides: '',
+      schedule: '',
+      color: 'purple'
+    },
+    {
       id: 'cate',
       name: 'Cate Huston',
       twitter: '',

@@ -119,8 +119,8 @@
       </div>
     </div>
 
-    <!-- speakers -->
-    <div class="container new-agenda pt-5 pb-5">
+    <!-- speaker cards -->
+    <div class="container new-agenda pt-5 pb-5" id="new-agenda">
       <div class="row justify-content-center align-items-center">
         <div class="card-group" id="speakers">
           <!-- template rendered here -->
@@ -128,10 +128,10 @@
       </div>
     </div>
 
-    <!-- speaker mustache template -->
+    <!-- speaker card mustache template -->
     <script id="speaker" type="x-tmpl-mustache">
       {{#speakers}}
-      <div class="col-lg-3 col-md-3 col-sm-12 px-0">
+      <div class="col-lg-2 col-md-3 col-sm-12 px-0">
         <div class="card rounded-0 border-0" data-toggle="modal" data-id={{id}}>
           <div class="card-body" style="background-image: url({{photo}}); background-size:cover; height: 10rem; background-color: {{color}} !important;">
             <h5 class="card-text">{{name}}</h5>
@@ -139,6 +139,28 @@
         </div>
       </div>
       {{/speakers}}
+    </script>
+
+    <!-- speaker modal -->
+    <div class="modal fade speaker-modal" id="speaker-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- template rendered here -->
+    </div>
+
+    <!-- speaker modal mustache template -->
+    <script id="speaker-info" type="x-tmpl-mustache">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{name}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>{{bio}}</p>
+          </div>
+        </div>
+      </div>
     </script>
 
     <!-- agenda -->
@@ -301,24 +323,6 @@
         <div class="col"></div>
       </div>
     </div>
-
-    <!-- speaker modal -->
-    <div class="modal fade speaker-modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <!-- Local JavaScript -->
     <script type="text/javascript" src="javascripts/speakers.js?v=0"></script>

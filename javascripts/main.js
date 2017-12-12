@@ -32,6 +32,9 @@ var rendered = Mustache.render(speakerTemplate, SPEAKERS);
 $("#speakers").html(rendered);
 
 // Modal
+var speakerModalTemplate = $("#speaker-info").html();
+Mustache.parse(speakerModalTemplate);
+
 $('.card').on('click', function (e) {
   e.preventDefault();
   var $el = $(e.currentTarget);
@@ -40,12 +43,12 @@ $('.card').on('click', function (e) {
     var speaker = SPEAKERS['speakers'].find(function (s) {
       return s.id == id;
     }) || {};
-    var modal = $('.speaker-modal').modal();
 
-    // Set the title of the modal to the speaker name
-    $('.speaker-modal .modal-title').text(speaker.name);
+    // Populate the template
+    var rendered = Mustache.render(speakerModalTemplate, speaker);
+    $("#speaker-modal").html(rendered);
 
-    // Set the modal body to the speaker bio
-    $('.speaker-modal .modal-body p').text(speaker.bio);
+    // Show the modal
+    $('#speaker-modal').modal();
   }
 });
