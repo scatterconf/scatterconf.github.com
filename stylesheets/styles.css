@@ -60,6 +60,9 @@ div.gallery {
 }
 
 /* New Agenda */
+.new-agenda .card {
+  min-height: 160px;
+}
 
 .new-agenda .card-body h5 {
   visibility: hidden;
