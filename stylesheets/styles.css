@@ -71,12 +71,13 @@ div.gallery {
 }
 
 .new-agenda div.card-body:hover {
-  background-blend-mode: luminosity;
-  cursor:pointer;
+  background-blend-mode: multiply;
+  cursor: pointer;
 }
 
 .new-agenda div.card-body:hover h5 {
   visibility: visible;
+  font-weight: bold;
   filter: opacity(100%);
 }
 
