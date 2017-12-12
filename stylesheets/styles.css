@@ -61,22 +61,6 @@ div.gallery {
 
 /* New Agenda */
 
-.new-agenda div.card.blue {
-  //background-color: blue;
-}
-
-.new-agenda div.card.orange {
-  background-color: orange;
-}
-
-.new-agenda div.card.yellow {
-  background-color: yellow;
-}
-
-.new-agenda div.card.green {
-  background-color: green;
-}
-
 .new-agenda .card-body h5 {
   visibility: hidden;
   color: #ffffff;
