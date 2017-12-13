@@ -131,11 +131,10 @@
     <!-- speaker card mustache template -->
     <script id="speaker" type="x-tmpl-mustache">
       {{#speakers}}
-      <div class="col-lg-2 col-md-3 col-sm-12 px-0">
-        <div class="card rounded-0 border-0" data-toggle="modal" data-id={{id}}>
-          <div class="card-body" style="background-image: url({{photo}}); background-size:cover; height: 10rem; background-color: {{color}} !important;">
-            <h5 class="card-text">{{name}}</h5>
-          </div>
+      <div class="col-lg-2 col-md-3 col-sm-12 px-0 d-flex align-items-stretch">
+        <div class="card rounded-0 border-0" data-toggle="modal" data-id={{id}} style="background-color: {{color}} !important">
+          <img class="card-img-top" src="{{photo}}"/>
+          <h5 class="card-text">{{name}}</h5>
         </div>
       </div>
       {{/speakers}}
