@@ -120,8 +120,9 @@
     </div>
 
     <!-- speaker cards -->
-    <div class="container new-agenda pt-5 pb-5" id="new-agenda">
+    <div class="container agenda pt-5 pb-5" id="agenda">
       <div class="row justify-content-center align-items-center">
+        <h2 class="text-center">Agenda &amp; Speakers</h2>
         <div class="card-group" id="speakers">
           <!-- template rendered here -->
         </div>
@@ -156,50 +157,14 @@
             </button>
           </div>
           <div class="modal-body">
+            <h5>{{title}}</h5>
+            <p>{{{abstract}}}</p>
+            <h5>Bio</h5>
             <p>{{{bio}}}</p>
           </div>
         </div>
       </div>
     </script>
-
-    <!-- agenda -->
-    <div class="container-fluid agenda" id="agenda">
-      <div class="row align-items-center py-5">
-        <div class="col"></div>
-        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-8 col-10">
-          <h2 class="text-center">Agenda &amp; Speakers</h2>
-
-          <p>Our call for participation is closed. Thank you to everyone who submitted a proposal for our two-day, single-track agenda. We will send all notifications by December 15, 2017.</p>
-
-          <p>We will announce confirmed speakers and talks here soon. 😄</p>
-
-          <p>In the meantime, here are some of our favorite stories and opinions that reflect the type of stories a we're hoping to hear at this event:</p>
-
-          <ul>
-            <li>
-              <a href="https://zachholman.com/posts/how-github-works-asynchronous/" target="_blank">How GitHub Works: Be Asynchronous</a>
-            </li>
-            <li>
-              <a href="https://hbr.org/2016/02/hire-the-best-people-and-let-them-work-from-wherever-they-are" target="_blank">Hire the Best People, and Let Them Work from Wherever They Are</a>
-            </li>
-            <li>
-              <a href="https://medium.com/@fox/building-remote-first-teams-a98bf8581db" target="_blank">Building remote-first teams</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/pulse/being-remote-manager-nassim-kammah" target="_blank">On being a remote ... manager</a>
-            </li>
-            <li>
-              <a href="https://www.simple.com/company/alone-together-why-our-remotes-love-to-keep-their-distance" target="_blank">Alone, Together – Why Our Remotes Love to Keep Their Distance</a>
-            </li>
-            <li>
-              <a href="http://blog.jonliv.es/blog/2015/01/14/remote-working-3-year-retrospective/" target="_blank">Remote Working – 3 Year Retrospective</a>
-            </li>
-          </ul>
-
-        </div>
-        <div class="col"></div>
-      </div>
-    </div>
 
     <!-- location -->
     <div class="container-fluid location" id="location">

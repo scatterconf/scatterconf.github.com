@@ -59,12 +59,13 @@ div.gallery {
   min-height: 30em;
 }
 
-/* New Agenda */
-.new-agenda .card {
+/* Agenda */
+
+.agenda .card {
   position: relative;
 }
 
-.new-agenda .card h5 {
+.agenda .card h5 {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -73,60 +74,47 @@ div.gallery {
   cursor: pointer;
 }
 
-.new-agenda img.card-img-top {
+.agenda img.card-img-top {
   background-blend-mode: normal;
   object-fit: cover;
 }
 
-.new-agenda div.card:hover img {
+.agenda div.card:hover img {
   filter: opacity(50%);
   cursor: pointer;
 }
 
-.new-agenda div.card:hover h5 {
+.agenda div.card:hover h5 {
   visibility: visible;
   font-weight: bold;
   filter: opacity(100%);
 }
 
 @media only screen and (max-width: 576px) {
-  .new-agenda img.card-img-top {
+  .agenda img.card-img-top {
     width: 100vw;
     height: 100vw;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .new-agenda img.card-img-top {
+  .agenda img.card-img-top {
     height: 180px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .new-agenda img.card-img-top {
+  .agenda img.card-img-top {
     height: 160px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .new-agenda img.card-img-top {
+  .agenda img.card-img-top {
     height: 190px;
   }
 }
 
-
-/* Agenda */
-
-/* Background vector created by Freepik - Freepik.com */
-/* http://www.freepik.com/free-vector/polygonal-abstract-background-design_719712.htm */
-
-div.agenda {
-  background-color: #f3f3f3;
-}
-
-.agenda p#form-success {
-  display: none;
-}
 
 /* Location */
 
