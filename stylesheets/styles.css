@@ -65,13 +65,19 @@ div.gallery {
   position: relative;
 }
 
-.agenda .card h5 {
+.agenda .card h5, .agenda .card span {
   position: absolute;
   left: 10px;
   top: 10px;
   visibility: hidden;
   color: #ffffff;
   cursor: pointer;
+  font-size: initial;
+}
+
+.agenda .card span {
+  top: initial;
+  bottom: 10px;
 }
 
 .agenda img.card-img-top {
@@ -80,13 +86,12 @@ div.gallery {
 }
 
 .agenda div.card:hover img {
-  filter: opacity(50%);
+  filter: opacity(30%);
   cursor: pointer;
 }
 
-.agenda div.card:hover h5 {
+.agenda div.card:hover h5, .agenda div.card:hover span {
   visibility: visible;
-  font-weight: bold;
   filter: opacity(100%);
 }
 
