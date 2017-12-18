@@ -103,7 +103,7 @@ var SPEAKERS = {
       name: 'Davide Casali',
       company: 'Automattic',
       twitter: '',
-      bio: 'Lorem ipsum',
+      bio: "Davide Casali, better known as “Folletto”, is a user experience director and startup advisor. He has an hybrid background in design, psychology, business, and technology. His objective is to change for better the quality of life of the people through the products he designs and lead. He currently works for Automattic, maker of WordPress.com.",
       photo: 'images/photos/speakers/davide_casali.jpg',
       title: 'Remote Design: The Async Advantage',
       abstract: "Working remotely has many benefits but also some obvious and non-obvious challenges. Discussions about remote work also often tend to be generic, however each discipline require its own kind of variations, and design isn't different.</br></br>A lot of the tools available to designers are meant to be used in person, but what if we happen to work remotely, or we want to switch a product team to being remote? How to build trust, gather feedback and craft a unified vision? This talk takes inspiration from some of the practices of Automattic's teams to overcome some of the unique challenges of remote working.</br></br>These solutions will also be beneficial to any designer that desires to engage with open source projects, as they are by definition remote.",
