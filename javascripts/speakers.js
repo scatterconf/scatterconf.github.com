@@ -47,7 +47,7 @@ var SPEAKERS = {
       name: 'Lisa Phillips',
       company: 'Fastly',
       twitter: '',
-      bio: "Lisa Phillips is vice president of site reliability engineering at Fastly. With a focus on internet and web technologies with an emphasis on systems and database administration, architecture, engineering, and management, Lisa isn’t afraid of hard problems or scale. She brings extensive experience in implementation and management of internet services to ensure highest levels of system availability and performance globally.",
+      bio: "Lisa Phillips is VP of SRE at Fastly. With 18 years of experience in internet and web technologies with emphasis on systems and database administration, architecture, engineering, and management, Lisa isn’t afraid of hard problems or scale. She brings extensive experience in implementation and management of internet services to ensure highest levels of system availability and performance globally.",
       photo: 'images/photos/speakers/lisa_phillips.jpg',
       title: 'Abstract Coming Soon',
       abstract: '',
@@ -138,7 +138,7 @@ var SPEAKERS = {
       video: '',
       slides: '',
       schedule: '',
-      color: '#aa8000'
+      color: '#1d9b9e'
     },
     {
       id: 'seth',
