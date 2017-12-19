@@ -95,6 +95,10 @@ div.gallery {
   filter: opacity(100%);
 }
 
+#speaker-modal h5.modal-title {
+  font-family: 'Rock Salt';
+}
+
 @media only screen and (max-width: 576px) {
   .agenda img.card-img-top {
     width: 100vw;
