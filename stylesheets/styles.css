@@ -61,16 +61,69 @@ div.gallery {
 
 /* Agenda */
 
-/* Background vector created by Freepik - Freepik.com */
-/* http://www.freepik.com/free-vector/polygonal-abstract-background-design_719712.htm */
-
-div.agenda {
-  background-color: #f3f3f3;
+.agenda .card {
+  position: relative;
 }
 
-.agenda p#form-success {
-  display: none;
+.agenda .card h5, .agenda .card span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  visibility: hidden;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: initial;
 }
+
+.agenda .card span {
+  top: initial;
+  bottom: 10px;
+}
+
+.agenda img.card-img-top {
+  background-blend-mode: normal;
+  object-fit: cover;
+}
+
+.agenda div.card:hover img {
+  filter: opacity(30%);
+  cursor: pointer;
+}
+
+.agenda div.card:hover h5, .agenda div.card:hover span {
+  visibility: visible;
+  filter: opacity(100%);
+}
+
+#speaker-modal h5.modal-title {
+  font-family: 'Rock Salt';
+}
+
+@media only screen and (max-width: 576px) {
+  .agenda img.card-img-top {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .agenda img.card-img-top {
+    height: 180px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .agenda img.card-img-top {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .agenda img.card-img-top {
+    height: 190px;
+  }
+}
+
 
 /* Location */
 

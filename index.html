@@ -12,7 +12,7 @@
     <title>Scatter Conference</title>
 
     <!-- CDN fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Raleway:200|Raleway:300|Raleway:400|Raleway:500|Raleway|Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|Raleway:200|Raleway:300|Raleway:400|Raleway:500|Raleway|Lobster+Two|Rock+Salt" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -22,6 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 
     <!-- Local styles -->
     <link rel="stylesheet" href="stylesheets/styles.css?v=7">
@@ -118,44 +119,53 @@
       </div>
     </div>
 
-    <!-- agenda -->
-    <div class="container-fluid agenda" id="agenda">
-      <div class="row align-items-center py-5">
-        <div class="col"></div>
-        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-8 col-10">
-          <h2 class="text-center">Agenda &amp; Speakers</h2>
-
-          <p>Our call for participation is closed. Thank you to everyone who submitted a proposal for our two-day, single-track agenda. We will send all notifications by December 15, 2017.</p>
-
-          <p>We will announce confirmed speakers and talks here soon. 😄</p>
-
-          <p>In the meantime, here are some of our favorite stories and opinions that reflect the type of stories a we're hoping to hear at this event:</p>
-
-          <ul>
-            <li>
-              <a href="https://zachholman.com/posts/how-github-works-asynchronous/" target="_blank">How GitHub Works: Be Asynchronous</a>
-            </li>
-            <li>
-              <a href="https://hbr.org/2016/02/hire-the-best-people-and-let-them-work-from-wherever-they-are" target="_blank">Hire the Best People, and Let Them Work from Wherever They Are</a>
-            </li>
-            <li>
-              <a href="https://medium.com/@fox/building-remote-first-teams-a98bf8581db" target="_blank">Building remote-first teams</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/pulse/being-remote-manager-nassim-kammah" target="_blank">On being a remote ... manager</a>
-            </li>
-            <li>
-              <a href="https://www.simple.com/company/alone-together-why-our-remotes-love-to-keep-their-distance" target="_blank">Alone, Together – Why Our Remotes Love to Keep Their Distance</a>
-            </li>
-            <li>
-              <a href="http://blog.jonliv.es/blog/2015/01/14/remote-working-3-year-retrospective/" target="_blank">Remote Working – 3 Year Retrospective</a>
-            </li>
-          </ul>
-
+    <!-- speaker cards -->
+    <div class="container agenda py-5 my-5" id="agenda">
+      <div class="row justify-content-center align-items-center">
+        <h2 class="text-center">Agenda &amp; Speakers</h2>
+        <div class="card-group" id="speakers">
+          <!-- template rendered here -->
         </div>
-        <div class="col"></div>
       </div>
     </div>
+
+    <!-- speaker card mustache template -->
+    <script id="speaker" type="x-tmpl-mustache">
+      {{#speakers}}
+      <div class="col-lg-2 col-md-3 col-sm-12 px-0 d-flex align-items-stretch">
+        <div class="card rounded-0 border-0" data-toggle="modal" data-id={{id}} style="background-color: {{color}} !important">
+          <img class="card-img-top" src="{{photo}}"/>
+          <h5 class="card-text">{{name}}</h5>
+          <span class="card-text">{{company}}</span>
+        </div>
+      </div>
+      {{/speakers}}
+    </script>
+
+    <!-- speaker modal -->
+    <div class="modal fade speaker-modal" id="speaker-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- template rendered here -->
+    </div>
+
+    <!-- speaker modal mustache template -->
+    <script id="speaker-info" type="x-tmpl-mustache">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header p-4">
+            <h5 class="modal-title">{{name}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-4">
+            <h5>{{title}}</h5>
+            <p>{{{abstract}}}</p>
+            <h5>Bio</h5>
+            <p>{{{bio}}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
 
     <!-- location -->
     <div class="container-fluid location" id="location">
@@ -279,9 +289,9 @@
       </div>
     </div>
 
-
     <!-- Local JavaScript -->
-    <script type="text/javascript" src="javascripts/main.js?v=1"></script>
+    <script type="text/javascript" src="javascripts/speakers.js?v=0"></script>
+    <script type="text/javascript" src="javascripts/main.js?v=2"></script>
 
     <!-- Google Analytics -->
     <script src="javascripts/scale.fix.js"></script>
