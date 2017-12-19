@@ -197,20 +197,6 @@ var SPEAKERS = {
       color: '#dc3545'
     },
     {
-      id: 'carolyn',
-      name: 'Carolyn Williams',
-      company: 'Ad Hoc',
-      twitter: '',
-      bio: 'Coming Soon',
-      photo: 'images/photos/speakers/carolyn_williams.jpg',
-      title: 'Killing me Softly with Constraints: Remote UX work and Government',
-      abstract: 'What happens when you add Government partnerships to the challenges of remote user experience work? This work comes with specific constraints that the team at Ad Hoc has learned to work with, in order to make remote collaboration with Government work. We’ll share our UX group’s insights on team norms and practices, ways to better communicate, and technical tools – lessons learned from our partnerships with Centers for Medicare and Medicaid Services and the Department of Veterans Affairs.</br></br>We get specific about version control and documentation when you can’t use Google docs, and pick the parts of Agile frameworks that really matter to user experience. Communication is critical – we’ll share our tips for picking the right mode of communication for different conversations, and setting expectations with stakeholders and within teams. Finally, we’ll dig in to which prototyping, communication, and documentation tools work best within the rules and regulations our Government partners need to stick to.',
-      video: '',
-      slides: '',
-      schedule: '',
-      color: '#1d9b9e'
-    },
-    {
       id: 'valentine',
       name: 'Valentine Reid',
       company: '',
@@ -223,6 +209,20 @@ var SPEAKERS = {
       slides: '',
       schedule: '',
       color: '#600b60'
+    },
+    {
+      id: 'carolyn',
+      name: 'Carolyn Williams',
+      company: 'Ad Hoc',
+      twitter: '',
+      bio: 'Coming Soon',
+      photo: 'images/photos/speakers/carolyn_williams.jpg',
+      title: 'Killing me Softly with Constraints: Remote UX work and Government',
+      abstract: 'What happens when you add Government partnerships to the challenges of remote user experience work? This work comes with specific constraints that the team at Ad Hoc has learned to work with, in order to make remote collaboration with Government work. We’ll share our UX group’s insights on team norms and practices, ways to better communicate, and technical tools – lessons learned from our partnerships with Centers for Medicare and Medicaid Services and the Department of Veterans Affairs.</br></br>We get specific about version control and documentation when you can’t use Google docs, and pick the parts of Agile frameworks that really matter to user experience. Communication is critical – we’ll share our tips for picking the right mode of communication for different conversations, and setting expectations with stakeholders and within teams. Finally, we’ll dig in to which prototyping, communication, and documentation tools work best within the rules and regulations our Government partners need to stick to.',
+      video: '',
+      slides: '',
+      schedule: '',
+      color: '#1d9b9e'
     },
     {
       id: 'lorinda',
