@@ -1,11 +1,11 @@
 var SPEAKERS = {
   "speakers": [
-    /* {
+    {
       id: 'matt',
       name: 'Matt Mullenweg',
       company: 'Automattic',
       twitter: '',
-      bio: "Matt Mullenweg is the co-founder of the open-source blogging platform, WordPress, the most popular publishing platform on the web, and the founder & CEO of Automattic, the company behind WordPress.com, WooCommerce, and Jetpack. Additionally, Matt runs Audrey Capital, an investment and research company.",
+      bio: "Matt Mullenweg is the co-founder of the open-source blogging platform, WordPress, the most popular publishing platform on the web, and the founder & CEO of Automattic, the company behind WordPress.com, WooCommerce, and Jetpack. Additionally, Matt runs Audrey Capital, an investment and research company.</br></br>He has been recognized for his leadership and success by Forbes, Bloomberg Businessweek, Inc Magazine, TechCrunch, Fortune, Fast Company, Wired, University Philosophical Society, and Vanity Fair.</br></br>Matt is originally from Houston, Texas, where he attended the High School for the Performing and Visual Arts and studied jazz saxophone. In his spare time, Matt is an avid photographer. Matt splits time between Houston, New York, and San Francisco.",
       photo: 'images/photos/speakers/matt_mullenweg.jpg',
       title: 'Abstract',
       abstract: 'Coming Soon',
@@ -13,7 +13,7 @@ var SPEAKERS = {
       slides: '',
       schedule: '',
       color: '#0d2950'
-    }, */
+    },
     {
       id: 'jill',
       name: 'Jill Jubinski',
@@ -71,18 +71,18 @@ var SPEAKERS = {
       color: '#600b60'
     },
     {
-      id: 'michael',
-      name: 'Michael Stahnke',
-      company: 'Puppet',
+      id: 'leah',
+      name: 'Leah Sutton',
+      company: 'Elastic',
       twitter: '',
-      bio: "Michael Stahnke is Director of Engineering overseeing Platform and Site Reliability at Puppet, Inc. He's held a few roles there, and been a part of the company growing from 35 to 530+ employees. While staying near the domains of release engineering, operations, and community, he’s been in leadership for most of the last decade. His primary joy comes from building teams,  mentoring team members, and, just recently, playing Hot Wheels cars with his son. He came to Puppet from Caterpillar, Inc. where he was an infrastructure architect, system administration team lead, and open source evangelist. Michael also helped get the Extra Packages for Enterprise Linux (EPEL) repository off the ground in 2005, is the author of Pro OpenSSH (Apress, 2005), and rants with some frequency about technology and computers, while striving to learn more about them. @stahnma on twitter and medium.",
-      photo: 'images/photos/speakers/michael_stahnke.jpg',
-      title: 'The Dark Side of Remote Management',
-      abstract: "How do you manage a problem employee when they’re not in the same place as you?<ul><li>Scenario A: you’re remote</li><li>Scenario B: they’re remote</li><li>Scenario C: you’re both remote</li></ul>Spoiler alert: hope you’ve got status on at least one commercial airline carrier.</br></br>Let's talk employee management, and the difficult stuff, performance management. How do you mentor, fix, build up, or deal with people that work thousands of miles away? Sometimes we put off the difficult conversations, sometimes we assume things are getting better. How do we actually manage this?",
+      bio: "Leah Sutton is the Vice President of Human Resources at Elastic and responsible for all facets of HR. Prior to Elastic, Leah was the Senior Director of HR at Plum Organics where she was responsible for supporting the leadership team through a period of high growth and change post-acquisition by Campbell Soup Company. Prior to working at Plum, Leah spent five years with Bloom Energy, a Silicon Valley-based clean tech. During her tenure at Bloom, she held various HR roles, including a stint in Bangalore as the HR leader for India and Asia Pacific. She was also a consultant at Deloitte and a Peace Corps Volunteer in West Africa. Leah holds a BA in Anthropology & African Studies from the University of Wisconsin — Madison and an MBA from UC Berkeley's Haas School of Business.",
+      photo: 'images/photos/speakers/leah_sutton.jpg',
+      title: 'You Look Like Me - Diversity in Distributed Teams',
+      abstract: "Diversity, without question, matters immensely in any field. And yet, when managing a distributed company there is a new challenge to consider. Words carry meaning (be they positive or negative) and the meaning of 'diversity' is entirely different for Austin, Des Moines, Tokyo, Sydney, Berlin, and the woods of Slovenia.</br></br>At Elastic, we have expanded our Diversity initiatives to also focus on Inclusion and Belonging. In this session, we will explore what we have learned, success, and failure in the journey towards a more open and inclusive company.",
       video: '',
       slides: '',
       schedule: '',
-      color: '#ee780c'
+      color: '#1d9b9e'
     },
     {
       id: 'jameson',
@@ -99,6 +99,20 @@ var SPEAKERS = {
       color: '#1d9b9e'
     },
     {
+      id: 'michael',
+      name: 'Michael Stahnke',
+      company: 'Puppet',
+      twitter: '',
+      bio: "Michael Stahnke is Director of Engineering overseeing Platform and Site Reliability at Puppet, Inc. He's held a few roles there, and been a part of the company growing from 35 to 530+ employees. While staying near the domains of release engineering, operations, and community, he’s been in leadership for most of the last decade. His primary joy comes from building teams,  mentoring team members, and, just recently, playing Hot Wheels cars with his son. He came to Puppet from Caterpillar, Inc. where he was an infrastructure architect, system administration team lead, and open source evangelist. Michael also helped get the Extra Packages for Enterprise Linux (EPEL) repository off the ground in 2005, is the author of Pro OpenSSH (Apress, 2005), and rants with some frequency about technology and computers, while striving to learn more about them. @stahnma on twitter and medium.",
+      photo: 'images/photos/speakers/michael_stahnke.jpg',
+      title: 'The Dark Side of Remote Management',
+      abstract: "How do you manage a problem employee when they’re not in the same place as you?<ul><li>Scenario A: you’re remote</li><li>Scenario B: they’re remote</li><li>Scenario C: you’re both remote</li></ul>Spoiler alert: hope you’ve got status on at least one commercial airline carrier.</br></br>Let's talk employee management, and the difficult stuff, performance management. How do you mentor, fix, build up, or deal with people that work thousands of miles away? Sometimes we put off the difficult conversations, sometimes we assume things are getting better. How do we actually manage this?",
+      video: '',
+      slides: '',
+      schedule: '',
+      color: '#ee780c'
+    },
+    {
       id: 'davide',
       name: 'Davide Casali',
       company: 'Automattic',
@@ -111,20 +125,6 @@ var SPEAKERS = {
       slides: '',
       schedule: '',
       color: '#0d2950'
-    },
-    {
-      id: 'leah',
-      name: 'Leah Sutton',
-      company: 'Elastic',
-      twitter: '',
-      bio: "Leah Sutton is the Vice President of Human Resources at Elastic and responsible for all facets of HR. Prior to Elastic, Leah was the Senior Director of HR at Plum Organics where she was responsible for supporting the leadership team through a period of high growth and change post-acquisition by Campbell Soup Company. Prior to working at Plum, Leah spent five years with Bloom Energy, a Silicon Valley-based clean tech. During her tenure at Bloom, she held various HR roles, including a stint in Bangalore as the HR leader for India and Asia Pacific. She was also a consultant at Deloitte and a Peace Corps Volunteer in West Africa. Leah holds a BA in Anthropology & African Studies from the University of Wisconsin — Madison and an MBA from UC Berkeley's Haas School of Business.",
-      photo: 'images/photos/speakers/leah_sutton.jpg',
-      title: 'You Look Like Me - Diversity in Distributed Teams',
-      abstract: "Diversity, without question, matters immensely in any field. And yet, when managing a distributed company there is a new challenge to consider. Words carry meaning (be they positive or negative) and the meaning of 'diversity' is entirely different for Austin, Des Moines, Tokyo, Sydney, Berlin, and the woods of Slovenia.</br></br>At Elastic, we have expanded our Diversity initiatives to also focus on Inclusion and Belonging. In this session, we will explore what we have learned, success, and failure in the journey towards a more open and inclusive company.",
-      video: '',
-      slides: '',
-      schedule: '',
-      color: '#1d9b9e'
     },
     {
       id: 'mo',
@@ -194,7 +194,7 @@ var SPEAKERS = {
       video: '',
       slides: '',
       schedule: '',
-      color: '#ee780c'
+      color: '#dc3545'
     },
     {
       id: 'carolyn',
