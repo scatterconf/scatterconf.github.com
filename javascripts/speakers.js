@@ -117,14 +117,14 @@ var SPEAKERS = {
       name: 'Leah Sutton',
       company: 'Elastic',
       twitter: '',
-      bio: 'Coming Soon',
+      bio: "Leah Sutton is the Vice President of Human Resources at Elastic and responsible for all facets of HR. Prior to Elastic, Leah was the Senior Director of HR at Plum Organics where she was responsible for supporting the leadership team through a period of high growth and change post-acquisition by Campbell Soup Company. Prior to working at Plum, Leah spent five years with Bloom Energy, a Silicon Valley-based clean tech. During her tenure at Bloom, she held various HR roles, including a stint in Bangalore as the HR leader for India and Asia Pacific. She was also a consultant at Deloitte and a Peace Corps Volunteer in West Africa. Leah holds a BA in Anthropology & African Studies from the University of Wisconsin — Madison and an MBA from UC Berkeley's Haas School of Business.",
       photo: 'images/photos/speakers/leah_sutton.jpg',
       title: 'You Look Like Me - Diversity in Distributed Teams',
       abstract: "Diversity, without question, matters immensely in any field. And yet, when managing a distributed company there is a new challenge to consider. Words carry meaning (be they positive or negative) and the meaning of 'diversity' is entirely different for Austin, Des Moines, Tokyo, Sydney, Berlin, and the woods of Slovenia.</br></br>At Elastic, we have expanded our Diversity initiatives to also focus on Inclusion and Belonging. In this session, we will explore what we have learned, success, and failure in the journey towards a more open and inclusive company.",
       video: '',
       slides: '',
       schedule: '',
-      color: '#dc3545'
+      color: '#1d9b9e'
     },
     {
       id: 'mo',
@@ -138,7 +138,7 @@ var SPEAKERS = {
       video: '',
       slides: '',
       schedule: '',
-      color: '#1d9b9e'
+      color: '#1f8536'
     },
     {
       id: 'seth',
