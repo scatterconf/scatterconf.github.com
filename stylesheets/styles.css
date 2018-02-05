@@ -188,6 +188,12 @@ div.sponsors {
   color: #e2c917;
 }
 
+/* Travel */
+
+.travel img {
+  width: inherit;
+}
+
 /* Code of Conduct */
 
 .conduct div.row {
