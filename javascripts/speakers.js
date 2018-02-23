@@ -43,12 +43,12 @@ var SPEAKERS = {
       color: '#aa8000'
     },
     {
-      id: 'lisa',
-      name: 'Lisa Phillips',
+      id: 'laine',
+      name: 'Laine Campbell',
       company: 'Fastly',
       twitter: '',
-      bio: "Lisa Phillips is VP of SRE at Fastly. With 18 years of experience in internet and web technologies with emphasis on systems and database administration, architecture, engineering, and management, Lisa isn’t afraid of hard problems or scale. She brings extensive experience in implementation and management of internet services to ensure highest levels of system availability and performance globally.",
-      photo: 'images/photos/speakers/lisa_phillips.jpg',
+      bio: 'Laine Campbell is an operations and database reliability veteran with 19 years of production experience under her belt. She is also the lead co-author for O’Reilly’s “Database Reliability Engineering” book. Currently the Sr. Director of Production Engineering at Fastly, she has established her experience and knowledge while working with such systems and organizations as Travelocity, Obama for America, Activision, Apple, LiveJournal, Chegg, Adobe, Disney Mobile, Zendesk and Okta. Laine has a passion for technical leadership, particularly serving as leadership and strategy support for high performing SRE, Operations and database organizations.',
+      photo: 'images/photos/speakers/laine_campbell.jpg',
       title: 'Going from 2 to 28: building remote-first operations teams',
       abstract: 'An organization charged with keeping the internet up and running largely benefits by being remote-first by design; when you have customers and edge locations all over the world, having a distributed team is necessary. At Fastly, we’ve built a world-class team of ops experts from many backgrounds and timezones around the world, amidst immense growth and with operational pressure. A lot has been said about distributed teams, but how do you build a remote-first operations team from the the ground up? Fastly VP of SRE will discuss how she built a world-class ops team, created incident management chains and war rooms, and grew her own career, all while being a remote executive. The talk will cover the bifurcation of work and life, how to be present in the office without being physically there, and growing as a remote leader, including the surprising team building tips you learn from getting robbed at home while on a conference call.',
       video: '',
